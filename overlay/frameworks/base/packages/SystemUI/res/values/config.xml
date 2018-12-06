@@ -38,4 +38,8 @@
         <item>7</item> <!-- 3: HIGH -->
         <item>27</item> <!-- 4: SUN -->
     </integer-array>
+    
+    <!-- Whether to show VoLTE icon in the status bar -->
+    <bool name="config_display_volte">true</bool>
+
 </resources>
