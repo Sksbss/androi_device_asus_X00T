@@ -458,6 +458,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	android.hardware.usb@1.0-service.basic
 
+# Enable extra vendor libs
+ENABLE_EXTRA_VENDOR_LIBS := true
+PRODUCT_PACKAGES += vendor-extra-libs
+
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
