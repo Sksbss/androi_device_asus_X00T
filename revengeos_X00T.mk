@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018 The RevengeOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,8 +19,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Revenge stuff
+$(call inherit-product, vendor/revengeos/config/common.mk)
+$(call inherit-product, vendor/revengeos/config/gsm.mk)
+
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_DENSITY := xxhdpi
+TARGET_GAPPS_ARCH := arm64
+USE_GCAM := true
+IS_PHONE := true
+REVENGEOS_BUILDTYPE := OFFICIAL
 
 # Inherit from X00T device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -28,7 +36,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := X00T
 PRODUCT_MANUFACTURER := asus
-PRODUCT_NAME := lineage_X00T
+PRODUCT_NAME := revengeos_X00T
 PRODUCT_MODEL := Zenfone Max Pro M1
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus

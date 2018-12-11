@@ -1,0 +1,2 @@
+add_lunch_combo revengeos_X00T-eng
+add_lunch_combo revengeos_X00T-userdebug
