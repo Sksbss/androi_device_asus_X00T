@@ -83,16 +83,6 @@
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name="com.asus.zenmotions.kcal.DisplayCalibration"
-            android:exported="true"
-            android:label="@string/kcal_title"
-            android:theme="@android:style/Theme.DeviceDefault.Settings">			
-          <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
-          </intent-filter>
-        </activity>
     </application>
 
 </manifest>

@@ -28,7 +28,6 @@ import android.view.MenuItem;
 
 import com.asus.zenmotions.settings.ScreenOffGestureSettings;
 import com.asus.zenmotions.TouchscreenGesturePreferenceActivity;
-import com.asus.zenmotions.kcal.DisplayCalibration;
 
 
 import java.text.DateFormat;
@@ -48,7 +47,6 @@ public class zenmotions extends PreferenceActivity implements OnPreferenceChange
      private static final boolean DEBUG = true;
      private static final String TAG = "Zenmotions";
 
-    private Preference mKcalPref;
     private Preference mAmbientPref;
     private Preference mGesturesPref;
     private Context mContext;
@@ -72,15 +70,6 @@ public class zenmotions extends PreferenceActivity implements OnPreferenceChange
                      @Override
                      public boolean onPreferenceClick(Preference preference) {
                          Intent intent = new Intent(getApplicationContext(), TouchscreenGesturePreferenceActivity.class);
-                         startActivity(intent);
-                         return true;
-                     }
-                });
-	mKcalPref = findPreference("kcal");
-                mKcalPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-                     @Override
-                     public boolean onPreferenceClick(Preference preference) {
-                         Intent intent = new Intent(getApplicationContext(), DisplayCalibration.class);
                          startActivity(intent);
                          return true;
                      }
