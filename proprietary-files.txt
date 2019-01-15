@@ -111,6 +111,11 @@ vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
+# Audio dirac
+lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
+lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
+vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
+
 # Bluetooth - from nitrogen-user 9 PKQ1.181007.001 8.11.28 release-keys
 vendor/bin/btnvtool|eba5f07ebfc8afcedc22470a8bfa4a93db31e40e
 vendor/bin/hci_qcomm_init|ba9fb4cc2c7071be9f28fc825c2215e3392b9949
