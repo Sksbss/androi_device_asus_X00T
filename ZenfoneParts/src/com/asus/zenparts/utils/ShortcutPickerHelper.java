@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.asus.zenmotions.util;
+package com.asus.zenparts.utils;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -28,9 +28,9 @@ import android.os.Bundle;
 import android.os.Parcelable;
 import android.util.Log;
 
-import com.asus.zenmotions.R;
+import com.asus.zenparts.R;
 
-import com.asus.zenmotions.util.AppHelper;
+import com.asus.zenparts.utils.AppHelper;
 
 import java.util.ArrayList;
 

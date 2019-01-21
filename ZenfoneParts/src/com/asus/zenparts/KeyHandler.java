@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.asus.zenmotions;
+package com.asus.zenparts;
 
 import android.database.ContentObserver;
 import android.content.BroadcastReceiver;
@@ -40,13 +40,13 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.WindowManagerGlobal;
 import android.service.notification.ZenModeConfig;
-import com.asus.zenmotions.settings.DeviceSettings;
-import com.asus.zenmotions.settings.ScreenOffGesture;
+import com.asus.zenparts.settings.DeviceSettings;
+import com.asus.zenparts.settings.ScreenOffGesture;
 import android.os.UserHandle;
 import com.android.internal.os.AlternativeDeviceKeyHandler;
 import com.android.internal.util.ArrayUtils;
-import com.asus.zenmotions.util.ActionConstants;
-import com.asus.zenmotions.util.Action;
+import com.asus.zenparts.utils.ActionConstants;
+import com.asus.zenparts.utils.Action;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.text.TextUtils;
@@ -182,7 +182,7 @@ public class KeyHandler implements AlternativeDeviceKeyHandler {
 
         try {
             mGestureContext = mContext.createPackageContext(
-                    "com.asus.zenmotions", Context.CONTEXT_IGNORE_SECURITY);
+                    "com.asus.zenparts", Context.CONTEXT_IGNORE_SECURITY);
         } catch (NameNotFoundException e) {
         }
     }

@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package com.asus.zenmotions.settings;
+package com.asus.zenparts.settings;
 
 import android.app.Activity;
 import android.app.AlertDialog;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.asus.zenmotions;
+package com.asus.zenparts;
 
 import android.content.ContentResolver;
 import android.content.Context;

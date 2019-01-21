@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.asus.zenmotions.settings;
+package com.asus.zenparts.settings;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -37,14 +37,14 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.asus.zenmotions.util.AppHelper;
-import com.asus.zenmotions.util.ActionConstants;
-import com.asus.zenmotions.util.DeviceUtils;
-import com.asus.zenmotions.util.DeviceUtils.FilteredDeviceFeaturesArray;
+import com.asus.zenparts.utils.AppHelper;
+import com.asus.zenparts.utils.ActionConstants;
+import com.asus.zenparts.utils.DeviceUtils;
+import com.asus.zenparts.utils.DeviceUtils.FilteredDeviceFeaturesArray;
 
-import com.asus.zenmotions.KernelControl;
-import com.asus.zenmotions.R;
-import com.asus.zenmotions.util.ShortcutPickerHelper;
+import com.asus.zenparts.KernelControl;
+import com.asus.zenparts.R;
+import com.asus.zenparts.utils.ShortcutPickerHelper;
 
 public class ScreenOffGesture extends PreferenceFragment implements
         OnPreferenceChangeListener, OnPreferenceClickListener,

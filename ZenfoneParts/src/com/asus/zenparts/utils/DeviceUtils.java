@@ -13,7 +13,7 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-package com.asus.zenmotions.util;
+package com.asus.zenparts.utils;
 
 import android.bluetooth.BluetoothAdapter;
 import android.content.ContentResolver;

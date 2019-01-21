@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.asus.zenmotions;
+package com.asus.zenparts;
 
-import com.asus.zenmotions.util.FileUtils;
+import com.asus.zenparts.utils.FileUtils;
 
 import java.io.File;
 

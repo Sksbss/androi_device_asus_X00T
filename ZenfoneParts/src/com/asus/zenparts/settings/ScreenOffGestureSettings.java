@@ -1,6 +1,5 @@
 /*
- * Copyright (c) 2016 The CyanogenMod Project
- *           (C) 2017 The LineageOS Project
+ * Copyright (C) 2014 Slimroms
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,19 +14,31 @@
  * limitations under the License.
  */
 
-package com.asus.zenmotions;
+package com.asus.zenparts.settings;
 
+import android.app.Activity;
 import android.os.Bundle;
+import android.view.MenuItem;
 
-import com.android.settingslib.drawer.SettingsDrawerActivity;
-
-public class TouchscreenGesturePreferenceActivity extends SettingsDrawerActivity {
+public class ScreenOffGestureSettings extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getFragmentManager().beginTransaction()
-                .replace(R.id.content_frame, new TouchscreenGesturePreferenceFragment())
-                .commit();
+
+        getFragmentManager().beginTransaction().replace(android.R.id.content,
+                new ScreenOffGesture()).commit();
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.asus.zenmotions;
+package com.asus.zenparts;
 
 import android.content.Context;
 import android.hardware.Sensor;

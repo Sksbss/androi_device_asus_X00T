@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.asus.zenmotions.settings;
+package com.asus.zenparts.settings;
 
 import android.content.res.Resources;
 import android.app.AlertDialog;
@@ -24,9 +24,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.SwitchPreference;
-import com.asus.zenmotions.KernelControl;
-import com.asus.zenmotions.R;
-import com.asus.zenmotions.util.FileUtils;
+import com.asus.zenparts.KernelControl;
+import com.asus.zenparts.R;
+import com.asus.zenparts.utils.FileUtils;
 import android.util.Log;
 import android.text.TextUtils;
 import android.provider.Settings;
